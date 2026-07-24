@@ -1,21 +1,17 @@
 import FadeIn from "./FadeIn";
+import ProfileImage from "./ProfileImage";
 
 export default function About() {
   return (
     <section id="about" className="section-padding">
       <div className="container-content">
         <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-16">
-          {/* Portrait — replace /public/images/profile.svg (or point src to your
-              own photo, e.g. /images/profile.jpg) with your standing photo. */}
+          {/* Portrait — upload your photo to public/images/profile.jpg.
+              Until then, it falls back to the placeholder automatically. */}
           <FadeIn className="order-1 md:order-none">
             <div className="relative mx-auto w-full max-w-sm">
               <div className="absolute -inset-3 -z-10 rounded-[20px] bg-accent-soft" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/profile.svg"
-                alt="Portrait of Heng Chhay"
-                className="aspect-[4/5] w-full rounded-card object-cover shadow-soft"
-              />
+              <ProfileImage />
             </div>
           </FadeIn>
 
