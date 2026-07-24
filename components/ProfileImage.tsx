@@ -14,7 +14,7 @@ export default function ProfileImage() {
     <img
       src={src}
       alt="Portrait of Heng Chhay"
-      onError={() => setSrc("/images/profile.svg")}
+      onError={() => setSrc("/images/Capture%20One%20Catalog0260.jpg")}
       className="aspect-[4/5] w-full rounded-card object-cover shadow-soft"
     />
   );
