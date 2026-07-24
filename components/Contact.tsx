@@ -25,8 +25,8 @@ const CONTACT_ITEMS = [
   },
   {
     label: "Phone",
-    value: "088-517-2546",
-    href: "tel:+8850885172546",
+    value: "088-517-6868",
+    href: "tel:+8850885176868",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
         <path
