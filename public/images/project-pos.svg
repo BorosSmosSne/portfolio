@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="POS and to-do mobile apps preview">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DDE7E0"/>
+      <stop offset="1" stop-color="#C7D6CC"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g1)"/>
+  <!-- phone -->
+  <g transform="translate(330 90)">
+    <rect x="0" y="0" width="180" height="330" rx="26" fill="#FFFFFF" stroke="#ECECEC" stroke-width="2"/>
+    <rect x="70" y="16" width="40" height="8" rx="4" fill="#ECECEC"/>
+    <rect x="18" y="46" width="144" height="46" rx="10" fill="#7C9885"/>
+    <rect x="30" y="62" width="70" height="14" rx="7" fill="#FFFFFF" opacity="0.85"/>
+    <rect x="18" y="108" width="144" height="34" rx="8" fill="#EEF2EF"/>
+    <rect x="18" y="152" width="144" height="34" rx="8" fill="#EEF2EF"/>
+    <rect x="18" y="196" width="144" height="34" rx="8" fill="#EEF2EF"/>
+    <circle cx="34" cy="125" r="7" fill="#7C9885"/>
+    <circle cx="34" cy="169" r="7" fill="#7C9885"/>
+    <circle cx="34" cy="213" r="7" fill="#C7D6CC"/>
+    <rect x="18" y="250" width="144" height="46" rx="10" fill="#1A1A1A"/>
+    <rect x="52" y="266" width="76" height="14" rx="7" fill="#FFFFFF" opacity="0.9"/>
+  </g>
+  <g font-family="Inter, system-ui, sans-serif">
+    <text x="60" y="90" fill="#1A1A1A" font-size="30" font-weight="700">POS &amp; To-Do</text>
+    <text x="60" y="124" fill="#4B4B4B" font-size="18">Flutter · Spring Boot · Laravel</text>
+  </g>
+</svg>

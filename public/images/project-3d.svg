@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Architectural 3D render preview">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EAE4DA"/>
+      <stop offset="1" stop-color="#D8CDBD"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g3)"/>
+  <!-- isometric building -->
+  <g transform="translate(400 270)">
+    <!-- left face -->
+    <polygon points="0,-120 -150,-35 -150,120 0,205" fill="#7C9885"/>
+    <!-- right face -->
+    <polygon points="0,-120 150,-35 150,120 0,205" fill="#6A8573"/>
+    <!-- top face -->
+    <polygon points="0,-120 -150,-35 0,50 150,-35" fill="#9DB6A4"/>
+    <!-- windows left -->
+    <g fill="#EAE4DA" opacity="0.7">
+      <rect x="-120" y="-10" width="34" height="34"/>
+      <rect x="-70" y="18" width="34" height="34"/>
+      <rect x="-120" y="60" width="34" height="34"/>
+      <rect x="-70" y="88" width="34" height="34"/>
+    </g>
+    <!-- windows right -->
+    <g fill="#D8CDBD" opacity="0.8">
+      <rect x="52" y="18" width="34" height="34"/>
+      <rect x="102" y="-10" width="34" height="34"/>
+      <rect x="52" y="88" width="34" height="34"/>
+      <rect x="102" y="60" width="34" height="34"/>
+    </g>
+  </g>
+  <g font-family="Inter, system-ui, sans-serif">
+    <text x="60" y="450" fill="#4B4B4B" font-size="18">AutoCAD · SketchUp · Blender</text>
+  </g>
+</svg>

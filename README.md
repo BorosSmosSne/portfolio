@@ -34,6 +34,17 @@ npm run build
 npm run start
 ```
 
+## Images & photos
+
+All images live in **`public/images/`** and are referenced with a leading slash (e.g. `/images/profile.svg`).
+
+- **Your photo:** the About section shows `public/images/profile.svg`. Drop in your standing photo and either
+  - save it as `public/images/profile.svg` (same name), or
+  - add e.g. `public/images/profile.jpg` and change the `src` in `components/About.tsx` to `/images/profile.jpg`.
+- **Project thumbnails:** replace `project-pos.svg`, `project-enterprise.svg`, `project-3d.svg`, and `project-motion.svg` in `public/images/`. Update the `image` field of each entry in `components/Portfolio.tsx` if you rename them.
+
+Recommended sizes: portrait photo ~800×1000 (4:5), project thumbnails ~800×500 (16:10).
+
 ## Customization
 
 - **Colors / tokens:** `tailwind.config.ts`

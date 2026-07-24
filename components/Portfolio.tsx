@@ -10,8 +10,8 @@ type Project = {
   category: Category;
   stack: string;
   description: string;
-  /** Two tailwind color stops for the placeholder thumbnail gradient. */
-  gradient: string;
+  /** Thumbnail in /public/images — swap these for real screenshots later. */
+  image: string;
 };
 
 const FILTERS = [
@@ -30,7 +30,7 @@ const PROJECTS: Project[] = [
     stack: "Flutter · Spring Boot · Laravel · Ubuntu",
     description:
       "Cross-platform mobile apps with secure REST APIs, deployed on self-managed Ubuntu servers.",
-    gradient: "from-[#DDE7E0] to-[#C7D6CC]",
+    image: "/images/project-pos.svg",
   },
   {
     title: "Enterprise Management Systems",
@@ -38,7 +38,7 @@ const PROJECTS: Project[] = [
     stack: "C# · Python · Node.js · MongoDB",
     description:
       "Internal business systems that streamline operations with reliable data pipelines and dashboards.",
-    gradient: "from-[#E3E7EC] to-[#CDD5DE]",
+    image: "/images/project-enterprise.svg",
   },
   {
     title: "Architectural Drafting & 3D",
@@ -46,7 +46,7 @@ const PROJECTS: Project[] = [
     stack: "AutoCAD · SketchUp · Blender",
     description:
       "Precise architectural drafting brought to life with detailed 3D models and photorealistic renders.",
-    gradient: "from-[#EAE4DA] to-[#D8CDBD]",
+    image: "/images/project-3d.svg",
   },
   {
     title: "Commercial Motion Graphics",
@@ -54,46 +54,9 @@ const PROJECTS: Project[] = [
     stack: "After Effects · Adobe Animate",
     description:
       "Punchy motion graphics and animated brand pieces crafted for commercial campaigns.",
-    gradient: "from-[#E8E1EA] to-[#D6CADD]",
+    image: "/images/project-motion.svg",
   },
 ];
-
-/** Small decorative glyph shown inside each placeholder thumbnail. */
-function CategoryGlyph({ category }: { category: Category }) {
-  const common = {
-    width: 40,
-    height: 40,
-    viewBox: "0 0 24 24",
-    fill: "none" as const,
-    stroke: "currentColor",
-    strokeWidth: 1.5,
-    strokeLinecap: "round" as const,
-    strokeLinejoin: "round" as const,
-  };
-
-  if (category === "Apps & Backend") {
-    return (
-      <svg {...common} aria-hidden>
-        <rect x="7" y="3" width="10" height="18" rx="2" />
-        <path d="M11 18h2" />
-      </svg>
-    );
-  }
-  if (category === "3D & Architecture") {
-    return (
-      <svg {...common} aria-hidden>
-        <path d="M12 2l9 5v10l-9 5-9-5V7l9-5z" />
-        <path d="M12 2v20M3 7l9 5 9-5" />
-      </svg>
-    );
-  }
-  return (
-    <svg {...common} aria-hidden>
-      <rect x="3" y="5" width="18" height="14" rx="2" />
-      <path d="M10 9l5 3-5 3V9z" />
-    </svg>
-  );
-}
 
 export default function Portfolio() {
   const [active, setActive] = useState<Filter>("All");
@@ -144,13 +107,14 @@ export default function Portfolio() {
           {filtered.map((project, i) => (
             <FadeIn key={project.title} delay={i * 90}>
               <article className="group flex h-full flex-col overflow-hidden rounded-card border border-line bg-surface shadow-soft transition-all duration-300 ease-smooth hover:-translate-y-1 hover:shadow-lift">
-                {/* Placeholder image */}
-                <div
-                  className={`relative flex aspect-[16/10] items-center justify-center bg-gradient-to-br ${project.gradient}`}
-                >
-                  <div className="text-charcoal/40 transition-transform duration-500 ease-smooth group-hover:scale-110">
-                    <CategoryGlyph category={project.category} />
-                  </div>
+                {/* Thumbnail — replace files in /public/images with real shots */}
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={project.image}
+                    alt={`${project.title} preview`}
+                    className="h-full w-full object-cover transition-transform duration-500 ease-smooth group-hover:scale-105"
+                  />
                   <span className="absolute left-4 top-4 rounded-full bg-surface/80 px-3 py-1 text-xs font-medium text-graphite backdrop-blur-sm">
                     {project.category}
                   </span>

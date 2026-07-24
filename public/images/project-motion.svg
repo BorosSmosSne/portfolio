@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Commercial motion graphics preview">
+  <defs>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8E1EA"/>
+      <stop offset="1" stop-color="#D6CADD"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g4)"/>
+  <!-- video frame -->
+  <g transform="translate(250 130)">
+    <rect x="0" y="0" width="300" height="200" rx="16" fill="#1A1A1A"/>
+    <polygon points="120,60 205,100 120,140" fill="#FFFFFF"/>
+  </g>
+  <!-- motion arcs -->
+  <g fill="none" stroke="#7C9885" stroke-width="6" stroke-linecap="round" opacity="0.8">
+    <path d="M120 250 q60 -60 120 -60"/>
+    <path d="M560 250 q-60 -60 -120 -60"/>
+  </g>
+  <g fill="#6A8573">
+    <circle cx="120" cy="250" r="10"/>
+    <circle cx="560" cy="250" r="10"/>
+  </g>
+  <g font-family="Inter, system-ui, sans-serif">
+    <text x="400" y="400" text-anchor="middle" fill="#4B4B4B" font-size="18">After Effects · Adobe Animate</text>
+  </g>
+</svg>
