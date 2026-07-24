@@ -7,7 +7,7 @@ import { useState } from "react";
  * it gracefully falls back to the SVG placeholder so the layout never breaks.
  */
 export default function ProfileImage() {
-  const [src, setSrc] = useState("/images/profile.jpg");
+  const [src, setSrc] = useState("/images/Capture%20One%20Catalog0260.jpg");
 
   return (
     // eslint-disable-next-line @next/next/no-img-element
